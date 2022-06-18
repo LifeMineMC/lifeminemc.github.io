@@ -1,0 +1,110 @@
+*{
+    -webkit-tap-highlight-color:transparent;
+    -webkit-backface-visibility:hidden;
+    -webkit-font-smoothing:antialiased;
+    outline:none!important;
+    -webkit-text-size-adjust:100%
+}
+html{
+    overflow-x:hidden
+}
+body{
+    font-family:'Roboto',sans-serif;
+    padding:64px 0 4px;
+    margin:0 auto;
+    font-size:15px;
+    color:#424242;
+    background-image:url(../img/12.png);
+    background-repeat:repeat;
+    font-weight:400;
+    position:relative;
+    min-height:calc(100vh - 68px);
+    overflow-x:hidden;
+    max-width:1170px
+}
+h1{
+    margin-bottom:0;
+    color:#222
+}
+h2{
+    padding-top:40px;
+    color:#222
+}
+h3{
+    color:#222;
+    text-align:center;
+    padding:0;
+    font-size:13px;
+    font-weight:400
+}
+h4{
+    color:#222;
+    margin-top:8px
+}
+p{
+    margin:10px 0
+}
+div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%
+}
+button{
+    font-family:'Roboto';
+    position:relative;
+    font-size:15px;
+    font-weight:700;
+    z-index:100;
+    color:#fff;
+    border:none;
+    border-radius:0;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:12px 24px;
+    line-height:22px;
+    cursor:pointer
+}
+button:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transition:all .625s cubic-bezier(0,0.8,0.26,0.99);
+    z-index:-1;
+    background-color:#31ae1f;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15);
+    border-top:4px solid #64fd1f;
+    border-bottom:4px solid #1e8c03;
+    border-left:4px solid #156c00;
+    border-right:4px solid #47d009
+}
+button:hover:before{
+    background-color:#272727!important;
+    transform:scale(1.1);
+    border-color:#3d3d3d #2f2f2f #000 #171717 !important
+}
+@media (max-width: 1200px){
+    body{
+        width:calc(100% - 128px)!important;
+        margin:0 64px!important
+    }
+}
+@media (max-width: 1000px){
+    body{
+        width:calc(100% - 64px)!important;
+        margin:0 32px!important
+    }
+}
+@media (max-width: 640px){
+    body{
+        width:calc(100% - 32px)!important;
+        margin:0 16px!important
+    }
+}
+ 
