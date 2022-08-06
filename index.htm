@@ -14,6 +14,25 @@
     <link rel="canonical" href="index.htm">
   </head>
   <body>
+    <header class="navbar">
+		  <div class="header">
+			<img onclick="location.href='https://lmmc.ru/'" src="media/img/favicon.png">
+		    <h2 onclick="location.href='https://lmmc.ru/'">LifeMine</h2>
+			<button class="navb" id="navb" onclick="document.getElementById('header-nav').style.display='block'; document.getElementById('navb').style.display='none'; document.getElementById('closenav').style.display='block';" style="display:none;">
+			<button class="closenav" id="closenav" onclick="document.getElementById('header-nav').style.display='none'; document.getElementById('closenav').style.display='none'; document.getElementById('navb').style.display='block';">
+			</div>
+			
+			<nav class="header-nav" id="header-nav">
+			  <ul class="menu">
+				<li><a href="index.htm">Главная</a></li>
+				<li><a href="howtoplay.html">Начать играть</a></li>
+				<li><a href="rules.html">Правила</a></li>
+				<li><a onclick="window.open('https://lifemine2.easydonate.ru/');">Донат</a></li>
+			  </ul>
+			</nav>
+	</header>
+	<div onclick="location.href='/howtoplay';">
+		<button class="support"></button>
     <section class="background-section">
       <div>
         <div>
@@ -98,6 +117,7 @@
       <div onclick="location.href='https://discord.com/invite/5wuzMRSXkN'">
         <button class="ds">Discord</button>
       </div>
+	</div>
     </section>
     <section class="dark-section">
       <img src="media/webp/Allay.webp" alt="LifeMine донат магазин">

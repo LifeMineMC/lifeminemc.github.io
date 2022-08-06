@@ -17,7 +17,8 @@ body{
     font-weight:400;
     position:relative;
     min-height:100vh;
-    overflow-x:hidden
+    overflow-x:hidden;
+	z-index: 1;
 }
 section{
     position:relative;
@@ -25,10 +26,149 @@ section{
     width:100%;
     padding:64px 0
 }
+@font-face {
+    font-family: MinecraftFiveBold;
+    src: url(../fonts/MinecraftFive-Bold.ttf);
+}
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/Minecraft.ttf);
+}
 button{
     font-family:'Roboto',sans-serif;
     z-index:1
 }
+.navbar{
+	background: #262626;
+	color:#fff;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 200;
+	position: fixed;
+	padding-top: 2px;
+	box-shadow: 0 2px 4px #00000077;
+}
+.navbar img{
+    position: fixed;
+    width:45px;
+	left: 5px;
+}
+.navbar h2{
+	position: relative;
+    color:#70F2A3;
+    font-weight:700;
+    font-size:25px;
+    text-transform:uppercase;
+    padding:0;
+	right: 0px;
+    width:66%;
+    margin-left:15%;
+    line-height:1.4;
+	font-family: 'MinecraftFiveBold', sans-serif;
+}
+.support{
+	margin-bottom:20px;
+    position:fixed;
+	display: none;
+    font-size:15px;
+    font-weight:700;
+    z-index:201;
+    background-color:#31ae1f;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:16px 16px;
+    line-height:22px;
+	bottom:0px;
+	right:18px;
+    cursor:pointer;
+	background-image:url(../img/support.png);
+	background-repeat : no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+	border-top:4px solid #64fd1f;
+    border-bottom:4px solid #1e8c03;
+    border-left:4px solid #156c00;
+    border-right:4px solid #47d009;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
+}
+.support:hover{
+    transform:scale(1.1);
+    background-color:#272727;
+    border-color:#3d3d3d #2f2f2f #000 #171717
+}
+.active {
+  display: block;
+}
+.header{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.header-nav {
+    width: 100%;
+    height: 100vh;
+	position: absolute;
+	opacity: 0.8;
+	background:#262626;
+	display: none;
+	list-style-type: none;
+	background-size: cover;
+	z-index: 250;
+}
+.header-nav li {
+	text-align: center;
+    margin: 15px auto;
+}
+.header-nav ul {
+      list-style-type: none;
+      display: flex;
+	  font-size: 16pt;
+      flex-direction: column;
+	  font-family: 'Minecraft', sans-serif;
+      height: 100%;
+}
+.header-nav a {
+	  position: fixed;
+	  display: block;
+	  padding: 3px 20px 13px 20px;
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  color:#fff;
+	  text-shadow: -1px 3px 5px rgba(0,0,0,.9);
+}
+
+.navb {
+	display: flex;
+	position: absolute;
+	background-image:url(../svg/navbar.svg);
+	background-repeat : no-repeat;
+	width:48px;
+    height:48px;
+	border: none;
+	background-color: transparent;
+	padding:22px -40px 20px;
+	right: 10px;
+	top: 16px;
+}
+
+.closenav {
+	display: flex;
+	position: absolute;
+	background-image:url(../svg/XButton.svg);
+	background-repeat : no-repeat;
+	width:20px;
+    height:20px;
+	border: none;
+	background-color: transparent;
+	padding:22px -40px 20px;
+	right: 38px;
+	top: 16px;
+}
+
 .white-section{
     flex-direction:column;
     background:#fff
@@ -59,7 +199,7 @@ button{
     background-size:cover;
     background-position:center;
     align-items:center;
-    background-image:url(../img/video_bg.jpg);
+    background-image:url(../img/video_bg_blur.jpg);
     padding:156px 0
 }
 .video-section span,.dark-section > span{
@@ -73,6 +213,7 @@ button{
 .play-button{
     position:relative;
     display:flex;
+	filter: blur(0px);
     border:none;
     border-radius:0;
     margin-top:48px;
@@ -645,7 +786,7 @@ button:hover #BorderCorner{
     animation-delay:.5s
 }
 .dark-section{
-    background:#000;
+    background:#262626;
     flex-direction:column;
     justify-content:center;
     align-items:center;
@@ -706,7 +847,7 @@ button:hover #BorderCorner{
 .footer{
     position:relative;
     font-size:13px;
-    background:#000;
+    background:#262626;
     padding:0;
     width:100%;
     display:flex;
