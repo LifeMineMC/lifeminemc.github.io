@@ -52,13 +52,18 @@ button{
 .navbar img{
     position: fixed;
     width:45px;
+	cursor:pointer;
 	left: 5px;
+}
+.navbar button{
+	cursor:pointer;
 }
 .navbar h2{
 	position: relative;
     color:#70F2A3;
     font-weight:700;
     font-size:25px;
+	cursor:pointer;
     text-transform:uppercase;
     padding:0;
 	right: 0px;
@@ -449,6 +454,7 @@ button:hover #BorderCorner{
 }
 .logo{
 	width: 100%;
+	cursor:pointer;
 	height: auto;
 }
 .mobile{
