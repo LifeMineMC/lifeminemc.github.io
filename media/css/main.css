@@ -72,10 +72,102 @@ button{
     line-height:1.4;
 	font-family: 'MinecraftFiveBold', sans-serif;
 }
+.supporttg{
+	margin-bottom:155px;
+    position:fixed;
+	display: none;
+    font-size:15px;
+    font-weight:700;
+    z-index:201;
+    background-color:#2AABEE;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:16px 16px;
+    line-height:22px;
+	bottom:0px;
+	right:18px;
+    cursor:pointer;
+	background-image:url(../img/tg_no_bg.png);
+	background-repeat : no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+	border-top:4px solid #30A3E6;
+    border-bottom:4px solid #0088CC;
+    border-left:4px solid #416690;
+    border-right:4px solid #30A3E6;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
+}
+.supporttg:hover{
+    transform:scale(1.1);
+    background-color:#272727;
+    border-color:#3d3d3d #2f2f2f #000 #171717
+}
+.supportvk{
+	margin-bottom:110px;
+    position:fixed;
+	display: none;
+    font-size:15px;
+    font-weight:700;
+    z-index:201;
+    background-color:#4c75a3;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:16px 16px;
+    line-height:22px;
+	bottom:0px;
+	right:18px;
+    cursor:pointer;
+	background-image:url(../img/vk_no_bg.png);
+	background-repeat : no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+	border-top:4px solid #6291c7;
+    border-bottom:4px solid #416690;
+    border-left:4px solid #3a5b80;
+    border-right:4px solid #5480b1;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
+}
+.supportvk:hover{
+    transform:scale(1.1);
+    background-color:#272727;
+    border-color:#3d3d3d #2f2f2f #000 #171717
+}
+.supportds{
+	margin-bottom:65px;
+    position:fixed;
+	display: none;
+    font-size:15px;
+    font-weight:700;
+    z-index:201;
+    background-color:#5865F2;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:16px 16px;
+    line-height:22px;
+	bottom:0px;
+	right:18px;
+    cursor:pointer;
+	background-image:url(../img/ds_no_bg.png);
+	background-repeat : no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+	border-top:4px solid #5865F2;
+    border-bottom:4px solid #5663F7;
+    border-left:4px solid #416690;
+    border-right:4px solid #5865F2;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
+}
+.supportds:hover{
+    transform:scale(1.1);
+    background-color:#272727;
+    border-color:#3d3d3d #2f2f2f #000 #171717
+}
 .support{
 	margin-bottom:20px;
     position:fixed;
-	display: none;
     font-size:15px;
     font-weight:700;
     z-index:201;
@@ -99,6 +191,37 @@ button{
     box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
 }
 .support:hover{
+    transform:scale(1.1);
+    background-color:#272727;
+    border-color:#3d3d3d #2f2f2f #000 #171717
+}
+.supportclick{
+	margin-bottom:20px;
+    position:fixed;
+	display: none;
+    font-size:15px;
+    font-weight:700;
+    z-index:201;
+    background-color:#434743;
+    text-transform:uppercase;
+    text-shadow:0 2px 0 rgba(0,0,0,0.25);
+    letter-spacing:1px;
+    padding:16px 16px;
+    line-height:22px;
+	bottom:0px;
+	right:18px;
+    cursor:pointer;
+	background-image:url(../img/support.png);
+	background-repeat : no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+	border-top:4px solid #424442;
+    border-bottom:4px solid #3B3E3B;
+    border-left:4px solid #3A3C3A;
+    border-right:4px solid #434743;
+    box-shadow:0 4px 0 0 rgba(0,0,0,0.15)
+}
+.supportclick:hover{
     transform:scale(1.1);
     background-color:#272727;
     border-color:#3d3d3d #2f2f2f #000 #171717
