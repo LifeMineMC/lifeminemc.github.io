@@ -766,7 +766,9 @@ button:hover #BorderCorner{
     line-height:1.3
 }
 .background-section h3,.dark-section h3{
-	color:#fff;
+	text-align: center;
+	color:#eb3e31;
+	-webkit-text-stroke: 0.5px #1a1918; 
 }
 .dark-section > :not(img){
     z-index:1
